@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using VkNet.Model;
-using VkNet.Model.RequestParams;
-using VkNet.Enums.Filters;
-using VkNet.Abstractions;
-using HoboBot.Extensions;
+﻿using HoboBot.Extensions;
 using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
+using System.Linq;
+using System;
+using VkNet.Abstractions;
+using VkNet.Enums.Filters;
+using VkNet.Model.RequestParams;
+using VkNet.Model;
 
 namespace HoboBot.Controllers
 {

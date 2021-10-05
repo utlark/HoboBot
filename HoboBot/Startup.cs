@@ -1,16 +1,16 @@
-using System;
-using VkNet;
-using VkNet.Model;
-using VkNet.Abstractions;
-using HoboBot.Extensions;
-using Hangfire;
 using Hangfire.SqlServer;
-using HangfireBasicAuthenticationFilter;
+using Hangfire;
+using HoboBot.Extensions;
+using HoboBot.HangfireAuthentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using System;
+using VkNet.Abstractions;
+using VkNet.Model;
+using VkNet;
 
 
 namespace HoboBot
@@ -84,8 +84,10 @@ namespace HoboBot
             app.UseHangfireDashboard("/hangfire", new DashboardOptions
             {
                 DashboardTitle = "HoboBot",
-                AppPath = null,
-                Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User= "****", Pass= "****" } }
+                Authorization = new[] { new HangfireCustomFilter{
+                    User = Configuration["HangfireSettings:UserName"],
+                    Pass = Configuration["HangfireSettings:Password"]
+                } }
             });
 
             app.UseEndpoints(endpoints =>
