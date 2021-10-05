@@ -1,0 +1,51 @@
+{
+  "Stats": {
+    "HealMax": 100,
+    "SatietyMax": 100
+  },
+  "Recovery": {
+    "Heal": 20,
+    "Satiety": 15
+  },
+  "ItemsAdd": {
+    "GoodMedecine": 50,
+    "BadMedecine": 20,
+    "GoodFood": 50,
+    "GoodFoodMood": 100,
+    "BadFood": 20,
+    "BadFoodMood": 0,
+    "TopMoney": 150,
+    "TopMoneyMood": 150
+  },
+  "WorkRandom": {
+    "THCoust": 5,
+    "BACoust": 7,
+    "BAManInterval": 15,
+    "BottelsChance": 70,
+    "BottelsCount": 10,
+    "BadMedecineChance": 30,
+    "BadMedecineCount": 2,
+    "BadFoodChance": 30,
+    "BadFoodCount": 2,
+    "THGopnikChance": 10,
+    "GopnikDamage": 25,
+    "THHoboChance": 20,
+    "HoboDamage": 15,
+    "BAGopnikChance": 20,
+    "BAManChance": 40,
+    "BAManCount": 100,
+    "GopnikMood": 150,
+    "HoboMood": 250,
+    "ManMood": 100,
+    "TrashMood": 50
+  },
+  "ShopPrice": {
+    "Medecine": 100,
+    "GoodFood": 50,
+    "Book": 500,
+    "Bottel": 10
+  },
+  "Descriptions": [
+    "¬ былые годы не удел€л должного внимани€ образованию: после 9 класса ее смог сдать ≈√Ё: не попал в армию из-за плоскостопии и жизнь покатилась по наклонной.\n» вот: к своим 27 годам он имеет мешок бутылок за спиной: сотку в кармане и син€к под глазом: а впереди его ждЄт очередна€ мусорка..."
+  ]
+}
